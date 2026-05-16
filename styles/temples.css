@@ -65,10 +65,6 @@ nav a:hover {
     content: "X";
 }
 
-nav a {
-    display: none;
-}
-
 nav.open a {
     display: block;
 }
