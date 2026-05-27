@@ -1,0 +1,39 @@
+body{
+    font-family: Inter, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+header{
+    background-color:#0B6E4F;    /* Deep Emerald Green */
+    color:white;
+}
+
+h2{
+    color:#0B6E4F;
+}
+
+body{
+    background-color:#FFF8F0;    /* Cream White */
+    color:#333333;               /* Dark Gray text */
+}
+
+main{
+    max-width:900px;
+    margin:0 auto;
+    padding:1rem;
+}
+
+section{
+    background-color:white;
+    border-left:6px solid #D4AF37;   /* Soft Gold */
+    padding:1rem;
+    margin:1rem;
+}
+
+footer{
+    background:#064E3B;
+    color:white;
+    text-align:center;
+    padding:1rem;
+}
