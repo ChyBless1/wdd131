@@ -14,13 +14,9 @@
     nav a {
         display: block;
     }
-
-    
 }
 .gallery {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
-    gap: 1rem;
     max-width: 1100px;
     margin: 0 auto;
 }
