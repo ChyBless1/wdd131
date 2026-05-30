@@ -108,7 +108,7 @@ function displayTemples(templeList) {
             <p><strong>Location:</strong> ${temple.location}</p>
             <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
             <p><strong>Size:</strong> ${temple.area} sq ft</p>
-            <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+            <img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">
         `;
 
         gallery.appendChild(card);
