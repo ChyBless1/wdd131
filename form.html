@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product review form for customers to rate and review products.">
+<meta name="author" content="Blessing Muokwe">
+
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/form.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+<script src="scripts/form.js" defer></script>
 
 </head>
 <body>
@@ -26,30 +31,42 @@
         Select a Product ...
     </option>
 </select>
-<fieldset>
+<fieldset class="rating">
     <legend>Overall Rating</legend>
 
-    <label for="rating1">☆</label>
-    <input type="radio" id="rating1" name="rating" value="1" required>
+    <div class="rating-options">
+        <div>
+            <label for="rating1">☆</label>
+            <input type="radio" id="rating1" name="rating" value="1" required>
+        </div>
 
-    <label for="rating2">☆☆</label>
-    <input type="radio" id="rating2" name="rating" value="2">
+        <div>
+            <label for="rating2">☆☆</label>
+            <input type="radio" id="rating2" name="rating" value="2" required>
+        </div>
 
-    <label for="rating3">☆☆☆</label>
-    <input type="radio" id="rating3" name="rating" value="3">
+        <div>
+            <label for="rating3">☆☆☆</label>
+            <input type="radio" id="rating3" name="rating" value="3" required>
+        </div>
 
-    <label for="rating4">☆☆☆☆</label>
-    <input type="radio" id="rating4" name="rating" value="4">
+        <div>
+            <label for="rating4">☆☆☆☆</label>
+            <input type="radio" id="rating4" name="rating" value="4" required>
+        </div>
 
-    <label for="rating5">☆☆☆☆☆</label>
-    <input type="radio" id="rating5" name="rating" value="5">
-
+        <div>
+            <label for="rating5">☆☆☆☆☆</label>
+            <input type="radio" id="rating5" name="rating" value="5" required>
+        </div>
+    </div>
 </fieldset>
+
 <fieldset>
     <legend>Date of Installation</legend>
 
     <label for="installationDate">
-        Installation Date
+        
     </label>
 
     <input
@@ -62,39 +79,39 @@
 <fieldset class="features">
     <legend>Useful Features</legend>
 
-    <p>Select all features you found useful:</p>
+    <p>Which features did you find useful in the product?<br>
+    <em>(Check all that apply)</em></p>
 
-    <label>
+    <div class="feature-option">
         <input type="checkbox" id="heat" name="features" value="Heat Retention">
-        Heat Retention
-    </label>
+        <label for="heat">Heat Retention</label>
+    </div>
 
-    <label>
+    <div class="feature-option">
         <input type="checkbox" id="durability" name="features" value="Durability">
-        Durability
-    </label>
+        <label for="durability">Durability</label>
+    </div>
 
-    <label>
+    <div class="feature-option">
         <input type="checkbox" id="leakproof" name="features" value="Leak-Proof Design">
-        Leak-Proof Design
-    </label>
+        <label for="leakproof">Leak-Proof Design</label>
+    </div>
 
-    <label>
+    <div class="feature-option">
         <input type="checkbox" id="clean" name="features" value="Easy to Clean">
-        Easy to Clean
-    </label>
+        <label for="clean">Easy to Clean</label>
+    </div>
 
-    <label>
+    <div class="feature-option">
         <input type="checkbox" id="mouth" name="features" value="Wide Mouth Opening">
-        Wide Mouth Opening
-    </label>
+        <label for="mouth">Wide Mouth Opening</label>
+    </div>
 </fieldset>
 
 <fieldset>
     <legend>Written Review(optional)</legend>
 
-    <label for="review">
-    </label>
+    <label for="review"></label>
 
     <textarea
         id="review"
@@ -130,6 +147,5 @@
     <p>&copy; 2026 Blessing Muokwe | Angola</p>
 </footer>
 
-<script src="scripts/form.js"></script>
 </body>
 </html>  

@@ -66,11 +66,16 @@ textarea:focus {
     border-color: #0077cc;
 }
 
-.rating label,
-.features label {
-    font-weight: normal;
-    display: block;
+.feature-option {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
     margin: .5rem 0;
+}
+
+.feature-option label {
+    margin: 0;
+    font-weight: normal;
 }
 
 input[type="radio"],
@@ -104,4 +109,30 @@ footer {
     color: white;
     padding: 1rem;
     margin-top: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    main {
+        max-width: 700px;
+    }
+
+    form {
+        padding: 2rem;
+    }
+}
+
+.rating-options {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.rating-options div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-options label {
+    margin-bottom: .3rem;
 }
