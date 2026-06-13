@@ -1,0 +1,504 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #333333;
+  background-color: #fff8f0;
+}
+
+h1,
+h2,
+h3,
+nav a,
+.logo {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  border-bottom: 3px solid #d4af37;
+  padding: 1rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #064635;
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+#nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+#nav-menu a {
+    color: #064635;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#nav-menu a:hover,
+#nav-menu a.active {
+    color: #064635;
+    border-bottom: 3px solid #d4af37;
+}
+.hero {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  color: white;
+  background:
+    linear-gradient(rgba(3, 42, 55, 0.88), rgba(3, 87, 63, 0.85)),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.04) 0px,
+      rgba(255, 255, 255, 0.04) 2px,
+      transparent 2px,
+      transparent 8px
+    );
+  border-radius: 12px;
+}
+
+.hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.3;
+  margin: 1rem 0;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+}
+
+.hero a {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #063f34;
+  padding: 0.8rem 1.3rem;
+  border-radius: 4px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.tagline {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #f4d03f;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 1.2rem;
+}
+
+.button {
+  display: inline-block;
+  background-color: #d4af37;
+  color: #111111;
+  padding: 0.8rem 1.3rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #f2c94c;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  color: #0b6e4f;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+.card-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #0b6e4f;
+}
+
+.card h3 {
+  color: #0b6e4f;
+  margin-top: 0;
+}
+
+.highlight {
+  background-color: #111111;
+  color: white;
+  padding: 2rem 1rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.highlight h2 {
+  color: #d4af37;
+}
+
+.features {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.features h2 {
+    text-align: center;
+    color: #0b6b53;
+    margin-bottom: 2rem;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.feature-grid article {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-grid article:hover {
+    transform: translateY(-5px);
+}
+
+.feature-grid h3 {
+    color: #0b6b53;
+    margin-bottom: 1rem;
+}
+
+.feature-grid p {
+    line-height: 1.6;
+}
+
+footer {
+  background-color: #0b6e4f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer a {
+  color: white;
+  font-weight: 700;
+}
+.page-hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #053b2f, #0f6b4f);
+  color: white;
+}
+
+.products-section {
+  padding: 3rem 1rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.products-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.product-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  padding: 1.2rem;
+}
+
+.product-info h3 {
+  color: #064635;
+  margin-bottom: 0.75rem;
+}
+
+.price {
+  color: #064635;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.save-button {
+  background-color: #d4af37;
+  color: #063f34;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+nav a.active {
+  color: #d4af37;
+  font-weight: 700;
+  border-bottom: 3px solid #d4af37;
+}
+.contact-hero {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem 2rem;
+}
+
+.contact-hero h1 {
+    font-size: 2.5rem;
+    color: #063f34;
+}
+
+.contact-hero p {
+    max-width: 700px;
+    margin: 1rem auto 0;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.contact-info {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 1.8rem 2rem;
+    background-color: #ffffff;
+    border-left: 5px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info h2 {
+    text-align: left;
+    color: #064635;
+    margin-bottom: 1.8rem;
+}
+
+.contact-info p {
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+}
+.contact-form-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.contact-form-section form {
+    display: grid;
+    gap: 1rem;
+    background: linear-gradient(135deg, #ffffff, #fff8e7);
+    padding: 2rem;
+    border-radius: 14px;
+    border-top: 6px solid #d4af37;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-section label {
+    font-weight: 700;
+    color: #064635;
+}
+
+.contact-form-section input,
+.contact-form-section textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.contact-form-section input:focus,
+.contact-form-section textarea:focus {
+    outline: 2px solid #d4af37;
+    border-color: #d4af37;
+}
+
+.contact-form-section button {
+    background-color: #c99c2f;
+    color: #063f34;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form-section button:hover {
+    background-color: #c09c2f;
+}
+.feature-card {
+    background: linear-gradient(135deg, #ffffff, #fff8e7);
+    border-top: 5px solid #d4af37;
+    border-radius: 14px;
+    padding: 2rem;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+}
+.featured-item {
+    max-width: 900px;
+    margin: 2rem auto;
+}
+
+.featured-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.about-story,
+.about-mission,
+.about-choose,
+.owner-section {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.about-story,
+.about-mission,
+.about-choose {
+    background: #fff8e7;
+    border-left: 5px solid #d4af37;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.about-story h2,
+.about-mission h2,
+.about-choose h2,
+.owner-section h2 {
+    text-align: center;
+    color: #064635;
+    margin-bottom: 1rem;
+}
+
+.about-choose ul {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.owner-section {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.owner-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+.about-image {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 14px;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+.owner-section {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.owner-image img {
+    width: 100%;
+    border-radius: 12px;
+    max-width: 550px;
+    height: 450px;
+    align-self: center;
+    margin-top: 80px;
+    
+}
+
+.owner-text h2 {
+    color: #064635;
+    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    white-space: nowrap;
+    
+}
+.owner-text{
+    max-width: 700px;
+}
+
+.owner-text p {
+    line-height: 1.8;
+}
+.owner-section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.owner-name {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #123524;
+    margin-bottom: 0.3rem;
+    line-height: 1.1;
+}
+
+.owner-title {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
