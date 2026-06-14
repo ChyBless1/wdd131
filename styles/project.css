@@ -36,9 +36,23 @@ header {
     text-decoration: none;
 }
 
+#menu-button {
+    display: block;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 #nav-menu {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#nav-menu.open {
     display: flex;
-    gap: 1.5rem;
 }
 
 #nav-menu a {

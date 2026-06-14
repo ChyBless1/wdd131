@@ -3,7 +3,7 @@
     display: none;
   }
 
-  nav {
+  #nav-menu {
     display: flex;
     flex-direction: row;
     gap: 1.5rem;

@@ -9,7 +9,7 @@ const products = [
   {
     name: "Silver Water Flask",
     size: "750ml",
-    price: "28,000 Kz",
+    price: "15,000 Kz",
     image: "../images/water-flask-silver-750ml.jpg",
     description: "Durable stainless steel vacuum flask for hot and cold drinks."
   },
@@ -111,3 +111,4 @@ function saveProductChoice() {
 displayProducts();
 setupMenu();
 saveProductChoice();
+
